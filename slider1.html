@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Boston City | Plan Your Visit</title>
+
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="slick/slick/slick.css">
+<link rel="stylesheet" href="slick/slick/slick-theme.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+
+
+     
+</head>
+
+<body id="top">
+
+	<div class="smallNavBar"><a href="#footerLinks" class="hamburgerOpen"></a></div>
+<!-- HEADER STARTS HERE -->
+	<header>
+    	<h1>Boston City</h1>
+    	<h2>Where History Comes Alive</h2>
+  </header>
+    
+<!-- NAV STARTS HERE -->
+	   
+    
+<!-- MAIN STARTS HERE -->
+	<main>
+	
+
+		<div class="myslider">
+			<picture>
+				<source srcset="https://i.imgur.com/D4nt5da.jpg" media="(min-width: 29.25rem)">
+				<img srcset="https://i.imgur.com/0Ta7vMH.jpg" alt="slider">
+			</picture>
+
+			<picture>
+				<source srcset="https://i.imgur.com/FGbqloR.jpg" media="(min-width: 29.25rem)">
+				<img srcset="https://i.imgur.com/SppM80z.jpg" alt="slider">
+			</picture>
+
+			<picture>
+				<source srcset="https://i.imgur.com/BK8Kvfp.jpg" media="(min-width: 29.25rem)">
+				<img srcset="https://i.imgur.com/R7sXmt1.jpg" alt="slider">
+			</picture>
+
+			<picture>
+				<source srcset="https://i.imgur.com/wd2m3qq.jpg" media="(min-width: 29.25rem)">
+				<img srcset="https://i.imgur.com/MPWZAhv.jpg" alt="slider">
+			</picture>
+		</div>
+
+		<h1>Plan Your Visit</h1>
+
+		<div class="gallery">
+			<a href="#" class="coolTrick one">
+				<img src="https://i.imgur.com/Ry8Oo5e.jpg">
+				<div class="coverColor photo"></div>
+				<div class="icon"><img src="images/city.png" alt=""></div>
+				<div class="txt">Visit Our City Center</div>
+			</a>
+
+			<a href="#" class="coolTrick two">
+				<img src="https://i.imgur.com/aaAtEeI.jpg">
+				<div class="coverColor photo"></div>
+				<div class="icon"><img src="images/night.png" alt=""></div>
+				<div class="txt">Visit Our Night Life</div>
+			</a>
+
+			<a href="#" class="coolTrick three">
+				<img src="https://i.imgur.com/j0KsMFu.jpg">
+				<div class="coverColor photo"></div>
+				<div class="icon"><img src="images/sports.png" alt=""></div>
+				<div class="txt">Visit Our Sports Life</div>
+			</a>
+
+			<a href="#" class="coolTrick four">
+				<img src="https://i.imgur.com/DQTncl7.jpg">
+				<div class="coverColor photo"></div>
+				<div class="icon"><img src="images/world.png" alt=""></div>
+				<div class="txt">Visit Our World Tour</div>
+			</a>
+		</div>
+
+    </main>
+    
+<!-- FOOTER STARTS HERE -->  
+<footer>
+<p>&copy; 2019 &bull; BOSTON CITY &bull; (801)-413-6118 &bull; <a href="#">Login</a></p>
+</footer>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="slick/slick/slick.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.myslider').slick({
+			autoplay:true,
+			dots:true,
+			arrows:false,
+			cssEase: 'ease-out',
+			speed: 1000,
+			autoplaySpeed: 8000
+		});
+	});
+</script>
+
+
+<!---------------------------- NAV STARTS HERE ---------------------------->
+
+	<nav class="clearfix" id="footerLinks">
+	<div class="smallNavBar"><a href="#top" class="hamburgerClose"></a></div>
+		<ul id="primaryNav">
+			<li class="active"><a href="#">Visit</a></li>
+			<li><a href="#">Departments</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Pay Bills</a></li>
+			<li><a href="#">Meetings</a></li>
+			<li><a href="#">Help</a></li>
+		</ul>   
+	</nav>
+    
+</body>
+</html>

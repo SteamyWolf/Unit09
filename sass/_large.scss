@@ -1,0 +1,53 @@
+
+/* ------------- HEADER ------------- */
+header {
+	background-image: url(https://i.imgur.com/czoQ5nW.png);
+}
+
+
+/*  ------------- NAV -------------  */
+nav {
+	max-width: 64rem;
+	ul {
+		margin-left: 2%;
+		border-left: 1px solid rgba(0,0,0,0.3);
+	}
+	ul li {
+		width: auto;
+	}// end li
+	ul li:last-child {border-right: 1px solid rgba(0,0,0,0.3);}
+	ul li a {
+		padding: .5rem 1rem;
+	} // and a
+} // end nav
+
+/* ------------- MAIN ------------- */
+
+body {
+	max-width: 64rem;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"one two three four"
+  }
+
+  .icon {
+	height: 170px;
+	width: 170px;
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	margin-top: -45%;
+}
+
+.txt {
+	position: absolute;
+	bottom: 50px;
+}
+

@@ -1,0 +1,175 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ------------- BODY ------------- */
+
+
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $normalWeight;
+}
+
+
+/* ------------- HEADER ------------- */
+header {
+	// position: relative;
+	height: 100px; 
+	background-image: url(https://i.imgur.com/MZuOrSJ.png);
+	background-repeat: no-repeat;
+	h1, h2 {font-weight: 600; color: black;} //end h1
+	h1{font-size: 2rem; padding-top: 35px;} //end h1
+	h2{font-size: 1rem;} //end h2
+}
+
+/*  ------------- NAV -------------  */
+
+.smallNavBar {
+	background-color: $menuColor;
+}
+
+.hamburger {
+	display: block;
+	width: 7rem;
+	height: 2.75rem;
+	background-repeat: no-repeat;
+	background-position: 2vw center;
+}
+
+.hamburgerOpen {
+	@extend .hamburger;
+	background-image: url(../images/menuOpenWhite.png);
+}
+
+.hamburgerClose {
+	@extend .hamburger;
+	background-image: url(../images/menuCloseWhite.png);
+}
+
+nav {
+	height: 100vh;
+	width: 100%;
+	background-color: $menuColor;
+	ul li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		padding: .6rem 2%;
+		border-bottom: solid 1px rgba(0,0,0,0.3);
+
+		ul li a {padding-left: 8%;}
+
+		.active a {background-color: $primaryColor;}
+	}
+} // end nav
+
+
+
+/*  ------------- MAIN -------------  */
+
+main {
+	h1 {
+		font-size: 2rem;
+		margin: 1rem 0 0 $gutter;
+		color: $primaryColor;
+	} // end h1
+
+	
+} // end main
+
+a.coolTrick {
+	display: block;
+	// float: left;
+	text-align: center;
+	width: auto;
+	margin: 1rem 0;
+	position: relative;
+
+	&:hover .coverColor {
+		opacity: .1;
+	}
+}
+
+.icon {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+	top: 50%;
+	margin-top: -45%;
+}
+
+.txt {
+	position: absolute;
+	bottom: 150px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.coverColor {	
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity .5s;
+	background-color: $secondaryColor;
+}
+
+//   --------------------GALLERY CSS GRID-------------------
+
+.gallery {
+	display: grid;
+	img {width: 100%;}
+	grid-column-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: 
+		"one"
+		"two"
+		"three"
+		"four"
+  }
+
+  .one {grid-area: one;}
+  .two {grid-area: two;}
+  .three {grid-area: three;}
+  .four {grid-area: four;}
+
+/*  ------------- SLICK SLIDER -------------  */
+.myslider div {
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+/*  ------------- FOOTER -------------  */
+footer {
+	margin-top: 75px;
+	clear: both;
+	width: 100%;
+	background-color: $secondaryColor;
+	p {
+		text-align: center;
+		color: $fontColor;
+		font-weight: 400;
+		padding: .75rem 0;
+		font-size: .9rem;
+	} // end p
+	p a {color: $primaryColor;}
+} // end footer
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
