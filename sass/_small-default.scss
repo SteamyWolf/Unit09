@@ -20,7 +20,7 @@ header {
 	height: 100px; 
 	background-image: url(https://i.imgur.com/MZuOrSJ.png);
 	background-repeat: no-repeat;
-	h1, h2 {font-weight: 600; color: black;} //end h1
+	h1, h2 {font-weight: 600; color: black; margin: 0 0 0 $gutter;} //end h1
 	h1{font-size: 2rem; padding-top: 35px;} //end h1
 	h2{font-size: 1rem;} //end h2
 }
